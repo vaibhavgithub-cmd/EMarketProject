@@ -1,13 +1,15 @@
 {
-    "builds": [{
-        "src": "MINIMARKET/wsgi.py",
-        "use": "@vercel/python",
-        "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
-    }],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "MINIMARKET/wsgi.py"
-        }
-    ]
+  "builds": [
+    {
+      "src": "MiniMarket/wsgi.py",
+      "use": "@vercel/python",
+      "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "MiniMarket/wsgi.py"
+    }
+  ]
 }
